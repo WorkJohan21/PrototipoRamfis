@@ -108,7 +108,7 @@ h3 a,
 h4 a,
 h5 a,
 h6 a {
-	color: #212121;
+	color: #00ad00;
 	text-decoration: none!important;
 	opacity: 1
 }
@@ -486,11 +486,11 @@ nav.main-menu {
 
 .menu-area-main li:hover a,
 .menu-area-main li:focus a {
-	color: #ff0000;
+	color: #00ad00;
 }
 
 .menu-area-main li.active a {
-	color: #ff0000;
+	color: #00ad00;
 }
 
 .right_cart_section {
@@ -1710,12 +1710,12 @@ input[type="radio"] .styled:checked+label::after {
     background: #fffdfd;
     opacity: 1;
     font-size: 30px;
-    color: #a91111;
+    color: #00ad00;
 }
 
 #slider_main .carousel-control-prev:hover, #slider_main .carousel-control-next:hover,
 #slider_main .carousel-control-prev:focus, #slider_main .carousel-control-next:focus {
-   background: #ff0000;
+   background: #00ad00;
    color: #fff;
 }
 
@@ -1779,12 +1779,12 @@ input[type="radio"] .styled:checked+label::after {
 
 .button_section a:hover,
 .button_section a:focus {
-	background: #ff0000 !important;
+	background: #00ad00 !important;
     color: #fff;
 }
 
 .orange_color {
-	color: #ff0000;
+	color: #00ad00;
 }
 
 .heading h3 {
