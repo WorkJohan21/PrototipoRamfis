@@ -86,7 +86,7 @@ body {
  }
  .brand .heading.active {
    top: 100px;
-   left: 100px;
+   left: 190px;
    transform: translate(0);
  }
  .brand .heading h2 {
@@ -109,7 +109,7 @@ body {
    width: 100%;
    text-align: center;
    position: absolute;
-   top: 50%;
+   bottom: 5%;
    left: 50%;
    transform: translate(-50%, -50%);
    margin-top: 60px;
