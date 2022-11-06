@@ -477,3 +477,65 @@ a, a:hover {
   border-radius: 12px;
   transition: all 0.3s;
 }
+
+/*Checkbox Corazón*/
+
+.corazon{
+  position: relative;
+  bottom: 20%;
+  transform: translateY(10%);
+  margin-bottom: 0;
+}
+label{
+  color: grey;
+  font-size: 1em;
+  cursor: pointer;
+  user-select: none;
+}
+
+input[type='checkbox']{
+  display: none;
+}
+
+input[type='checkbox']:checked + label{
+  color: red;
+  animation: grow .5s;
+  animation-timing-function: cubic-bezier(.21, .61, .35, 1);
+}
+
+@keyframes grow{
+  0%{
+    font-size: 0.5em
+  }
+  30%{
+    font-size: 1em
+  }
+  85%{
+    font-size: 1.5em
+  }
+  100%{
+    font-size: 1em
+  }
+}
+
+/*Checkbox Corazón*/
+
+
+.card-bodys{
+  border-color: #00ad00;
+  color: black;
+}
+
+.card-bodys:hover{
+  background-color: #EAEAEA;   
+  border-color: #00ad00;
+  border-width: 3px;
+  color: #000000; 
+  font-weight: bold;
+}
+
+.card-title{
+  margin-bottom:.75rem
+}
+
+.card-subtitle{margin-top:-.375rem;margin-bottom:0}

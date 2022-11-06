@@ -2264,11 +2264,16 @@ ul.social_icon li a {
 
 .wdt {height: 250px !important;}
 
+.tamaño-foto{
+	width: 200px;
+	height: 650px;
+	transition:transform .2s ease;
+}
 
+.justificar{
+	text-align: justify;
 
-
-
-
+}
 
 
 
