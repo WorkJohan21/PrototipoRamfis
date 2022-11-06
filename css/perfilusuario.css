@@ -290,6 +290,27 @@ a, a:hover {
   color: #142029;
 }
 
+
+.wrapper2 {
+  width: 100%;
+  height: auto;
+  min-height: 70vh;
+  padding: 50px 20px;
+  padding-top: 120px;
+  display: flex;
+  /*background-image: linear-gradient(-20deg, #ff2846 0%, #6944ff 100%);*/
+  display: flex;
+  /*background-image: linear-gradient(-20deg, #ff2846 0%, #6944ff 100%);*/
+}
+@media screen and (max-width: 768px) {
+  .wrapper2 {
+    height: auto;
+    min-height: 100vh;
+    padding-top: 100px;
+  }
+}
+
+
 /*PROFILE CARD BUTTON 2*/
 
 .profile-card__button2 {
@@ -502,6 +523,32 @@ input[type='checkbox']:checked + label{
   animation: grow .5s;
   animation-timing-function: cubic-bezier(.21, .61, .35, 1);
 }
+
+/*-----------------------------------------------------------------*/
+
+.corazon-rojo{
+  position: relative;
+  bottom: 20%;
+  transform: translateY(10%);
+  margin-bottom: 0;
+}
+.label{
+  color: red;
+  font-size: 1em;
+  cursor: pointer;
+  user-select: none;
+}
+
+input[type='checkbox']{
+  display: none;
+}
+
+input[type='checkbox']:checked + label{
+  color: red;
+  animation: grow .5s;
+  animation-timing-function: cubic-bezier(.21, .61, .35, 1);
+}
+
 
 @keyframes grow{
   0%{
