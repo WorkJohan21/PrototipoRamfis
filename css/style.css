@@ -2270,6 +2270,12 @@ ul.social_icon li a {
 	transition:transform .2s ease;
 }
 
+.tamaño-foto2{
+	width: 120px;
+	height: 85px;
+	transition:transform .2s ease;
+}
+
 .justificar{
 	text-align: justify;
 

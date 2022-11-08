@@ -8,19 +8,26 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="viewport" content="initial-scale=1, maximum-scale=1">
       <!-- site metas -->
-      <title>Trip & Deal</title>
+      <title>Trip&Deal</title>
       <meta name="keywords" content="">
       <meta name="description" content="">
       <meta name="author" content="">
       <!-- bootstrap css -->
-      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
       <!-- style css -->
       <link rel="stylesheet" href="css/style.css">
-      <link rel="stylesheet" href="css/blog.css">
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/perfilusuario.css">
+	   <link rel="stylesheet" href="css/estilo_tabla_usuarios.css">
       <!-- Responsive-->
       <link rel="stylesheet" href="css/responsive.css">
       <!-- fevicon -->
       <link rel="icon" href="images/Trip&Deal_Logo_Bolita1.png" type="image/gif" />
+      <link rel="stylesheet" href="css/svg-with-js.css">
       <!-- Scrollbar Custom CSS -->
       <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
       <!-- Tweaks for older IEs-->
@@ -43,7 +50,7 @@
                <div class="col-lg-3 logo_section">
                   <div class="full">
                      <div class="center-desk">
-                        <div class="logo"> <a href="index.html"><img src="images/logo_Trip&Deal.png" alt="#"></a> </div>
+                        <div class="logo"> <a href="index.html"><img src="images/logo_Trip&Deal.png"></a> </div>
                      </div>
                   </div>
                </div>
@@ -52,7 +59,7 @@
                      <div class="limit-box">
                         <nav class="main-menu">
                            <ul class="menu-area-main">
-                              <li >
+                              <li class="active">
                                  <a href="index.html">Inicio</a>
                               </li>
                               <li>
@@ -61,18 +68,38 @@
                               <li>
                                  <a href="actividades.html">Actividades</a>
                               </li>
-                              <li class="active">
+                              <li>
                                  <a href="blog.html">Blog</a>
                               </li>
                               <li>
                                  <a href="contact.html">Contáctanos</a>
                               </li>
-                              <li>
-                                 <a href="registrar.html">Login</a>
-                              </li>
-                              <li>
-                                 <a href="#"><img src="images/search_icon.png" alt="#" /></a>
-                              </li>
+
+                              <!-- Nav Item - User Information -->
+                              <li class="nav-item dropdown no-arrow">
+                                 <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                     <span class="active mr-2 d-none d-lg-inline  text-lg">Juan Pérez</span>
+                                 </a>
+                                 <!-- Dropdown - User Information -->
+                                 <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                     aria-labelledby="userDropdown">
+                                     <a class="dropdown-item" href="perfilusuario.html">
+                                         <img src="images/user.png">
+                                         Perfil
+                                     </a>
+                                     <a class="dropdown-item" href="configuración.html">                                         
+                                         <img src="images/settings.png">
+                                         Configuración
+                                     </a>                                  
+                                     <div class="dropdown-divider"></div>
+                                     <a class="dropdown-item" href="index.html" data-toggle="modal" data-target="#logoutModal">
+                                          <img src="images/logout.png">
+                                         Logout
+                                     </a>
+                                 </div>
+                              </li>        
+                              
                            </ul>
                         </nav>
                      </div>
@@ -82,139 +109,140 @@
          </div>
          <!-- end header inner -->
       </header>
-      <!-- end header -->
-      <!-- revolution slider -->
       
-<div class="Blog-bg">
-   <div class="container">
-      <div class="row">
-         <div class="col-md-12">
-            <div class="Blogheading">
-               <h3>Top Eventos de la semana</h3>
-            </div>
-         </div>
-      </div>
-   </div>
+      <div class="wrapper">
+        <div class="profile-card js-profile-card">
+          <div class="profile-card__img">
+            <img src="https://res.cloudinary.com/muhammederdem/image/upload/v1537638518/Ba%C5%9Fl%C4%B1ks%C4%B1z-1.jpg" alt="profile card">
+          </div>
+
+          <div class="profile-card__cnt js-profile-cnt">
+          <div class="profile-card__name">Juan Pérez</div>
+          <div class="profile-card__txt">Tabla de usuarios</div>
+
+          <section class="main-content">
+		     <div class="container">
+			 <table class="table">
+			    <thead>
+				  <tr>
+					 <th>Usuario</th>
+					 <th>Estado</th>
+					 <th>Ubicación</th>
+					 <th>Teléfono</th>
+					 <th>Contacto</th>
+					 <th>Acciones</th>
+				  </tr>
+				</thead>
+
+				<tbody>
+				  <tr>
+					 <td>
+						<div class="user-info">
+						  <div class="user-info__img">
+							 <img src="images/c_1.png" alt="User Img">
+						  </div>
+						  <div class="user-info__basic">
+							 <h5 class="mb-0">Kiran Acharya</h5>
+							 <p class="text-muted mb-0">@kiranacharyaa</p>
+						  </div>
+						</div>
+					 </td>
+
+					 <td>
+						<span class="active-circle bg-success"></span> Activo
+					 </td>
+					 <td>Bangalore</td>
+					 <td>+91 9876543215</td>
+					 <td>
+						<button class="btn btn-primary btn-sm">Contactar</button>
+					 </td>
+					 <td>
+						<div class="dropdown open">
+						  <a href="#!" class="px-2" id="triggerId1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							 <i class="fa fa-ellipsis-v"></i>
+						  </a>
+						  <div class="dropdown-menu" aria-labelledby="triggerId1">
+							  <a class="dropdown-item" href="#"><i class="fa fa-pencil mr-1"></i> Editar</a>
+							  <a class="dropdown-item text-danger" href="#"><i class="fa fa-trash mr-1"></i> Eliminar</a>
+						   </div>
+						</div>
+						</td>
+				  </tr>
+				  <tr>
+						<td>
+							<div class="user-info">
+								<div class="user-info__img">
+									<img src="images/c_2.png" alt="User Img">
+								</div>
+								<div class="user-info__basic">
+									<h5 class="mb-0">Kiran Acharya</h5>
+									<p class="text-muted mb-0">@kiranacharyaa</p>
+								</div>
+							</div>
+						</td>
+						<td>
+							<span class="active-circle bg-danger"></span> Inactivo
+						</td>
+						<td>Bangalore</td>
+						<td>+91 9876543215</td>
+						<td>
+							<button class="btn btn-primary btn-sm">Contactar</button>
+						</td>
+						<td>
+							<div class="dropdown open">
+								<a href="#!" class="px-2" id="triggerId2" data-toggle="dropdown" aria-haspopup="true"
+										aria-expanded="false">
+											<i class="fa fa-ellipsis-v"></i>
+								</a>
+								<div class="dropdown-menu" aria-labelledby="triggerId2">
+									<a class="dropdown-item" href="#"><i class="fa fa-pencil mr-1"></i> Editar</a>
+									<a class="dropdown-item text-danger" href="#"><i class="fa fa-trash mr-1"></i> Eliminar</a>
+								</div>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div class="user-info">
+								<div class="user-info__img">
+									<img src="images/c_1.png" alt="User Img">
+								</div>
+								<div class="user-info__basic">
+									<h5 class="mb-0">Kiran Acharya</h5>
+									<p class="text-muted mb-0">@kiranacharyaa</p>
+								</div>
+							</div>
+						</td>
+						<td>
+							<span class="active-circle bg-success"></span> Activo
+						</td>
+						<td>Bangalore</td>
+						<td>+91 9876543215</td>
+						<td>
+							<button class="btn btn-primary btn-sm">Contactar</button>
+						</td>
+						<td>
+							<div class="dropdown open">
+								<a href="#!" class="px-2" id="triggerId3" data-toggle="dropdown" aria-haspopup="true"
+										aria-expanded="false">
+											<i class="fa fa-ellipsis-v"></i>
+								</a>
+								<div class="dropdown-menu" aria-labelledby="triggerId3">
+									<a class="dropdown-item" href="#"><i class="fa fa-pencil mr-1"></i> Editar</a>
+									<a class="dropdown-item text-danger" href="#"><i class="fa fa-trash mr-1"></i> Eliminar</a>
+								</div>
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			   </table>
+		     </div>
+	      </section>
 </div>
-
-<!-- partial:index.partial.html -->
-<div class="cont s--inactive">
-   <!-- cont inner start -->
-   <div class="cont__inner">
-     <!-- el start -->
-     <div class="el">
-       <div class="el__overflow">
-         <div class="el__inner">
-           <div class="el__bg"></div>
-           <div class="el__preview-cont">
-             <h2 class="el__heading">RIU Playa Blanca</h2>
-           </div>
-           <div class="el__content">
-             <div class="el__text">En esta semana el RIU Playa Blanca tendra actividades especiales celebrando el mes de la patria</div>
-             <div class="el__close-btn"></div>
-           </div>
-         </div>
-       </div>
-       <div class="el__index">
-         <div class="el__index-back">1</div>
-         <div class="el__index-front">
-           <div class="el__index-overlay" data-index="1">1</div>
-         </div>
-       </div>
-     </div>
-     <!-- el end -->
-     <!-- el start -->
-     <div class="el">
-       <div class="el__overflow">
-         <div class="el__inner">
-           <div class="el__bg"></div>
-           <div class="el__preview-cont">
-             <h2 class="el__heading">Feria de las flores</h2>
-           </div>
-           <div class="el__content">
-             <div class="el__text">Celebracion de la feria de la flores y el cafe en Boquete</div>
-             <div class="el__close-btn"></div>
-           </div>
-         </div>
-       </div>
-       <div class="el__index">
-         <div class="el__index-back">2</div>
-         <div class="el__index-front">
-           <div class="el__index-overlay" data-index="2">2</div>
-         </div>
-       </div>
-     </div>
-     <!-- el end -->
-     <!-- el start -->
-     <div class="el">
-       <div class="el__overflow">
-         <div class="el__inner">
-           <div class="el__bg"></div>
-           <div class="el__preview-cont">
-             <h2 class="el__heading">Mercadito Casco Antiguo</h2>
-           </div>
-           <div class="el__content">
-             <div class="el__text">Disfruta de gastronomía y artesanías con Sabores del Barrio en Casco Antiguo de 10 am a 7pm en el Arco Chato / Acceso Gratis</div>
-             <div class="el__close-btn"></div>
-           </div>
-         </div>
-       </div>
-       <div class="el__index">
-         <div class="el__index-back">3</div>
-         <div class="el__index-front">
-           <div class="el__index-overlay" data-index="3">3</div>
-         </div>
-       </div>
-     </div>
-     <!-- el end -->
-     <!-- el start -->
-     <div class="el">
-       <div class="el__overflow">
-         <div class="el__inner">
-           <div class="el__bg"></div>
-           <div class="el__preview-cont">
-             <h2 class="el__heading">Museo de la Mola</h2>
-           </div>
-           <div class="el__content">
-             <div class="el__text">Visita al Museo de la Mola para descubrir la cultura e historia Guna</div>
-             <div class="el__close-btn"></div>
-           </div>
-         </div>
-       </div>
-       <div class="el__index">
-         <div class="el__index-back">4</div>
-         <div class="el__index-front">
-           <div class="el__index-overlay" data-index="4">4</div>
-         </div>
-       </div>
-     </div>
-     <!-- el end -->
-     <!-- el start -->
-     <div class="el">
-       <div class="el__overflow">
-         <div class="el__inner">
-           <div class="el__bg"></div>
-           <div class="el__preview-cont">
-             <h2 class="el__heading">Exposicion Fotografica</h2>
-           </div>
-           <div class="el__content">
-             <div class="el__text">Exposicion fotografica: Visiones del Futuro, un evento organizado por la embajada de Estados Unidos en Cuidad del Saber</div>
-             <div class="el__close-btn"></div>
-           </div>
-         </div>
-       </div>
-       <div class="el__index">
-         <div class="el__index-back">5</div>
-         <div class="el__index-front">
-           <div class="el__index-overlay" data-index="5">5</div>
-         </div>
-       </div>
-     </div>
-     <!-- el end -->
-   </div>
-   <!-- cont inner end -->
- </div>
-
+</div>
+</div>
+</div>      
+      
       <!-- footer -->
       <footer>
          <div class="container">
@@ -239,11 +267,10 @@
                      <ul>
                         <li><a href="index.html"><i class="fa fa-angle-right" aria-hidden="true"></i> Inicio</a></li>
                         <li><a href="about.html"><i class="fa fa-angle-right" aria-hidden="true"></i> Sobre Nosotros</a></li>
-                        <li><a href="actividades.html"><i class="fa fa-angle-right" aria-hidden="true"></i> Actividades</a></li>
+                        <li><a href="marketing.html"><i class="fa fa-angle-right" aria-hidden="true"></i> Markrting</a></li>
                         <li><a href="blog.html"><i class="fa fa-angle-right" aria-hidden="true"></i> Blog</a></li>
                         <li><a href="contact.html"><i class="fa fa-angle-right" aria-hidden="true"></i> Contáctanos</a></li>
                         <li><a href="registrar.html"><i class="fa fa-angle-right" aria-hidden="true"></i> Login</a></li>
-                     </ul>
                      </ul>
                   </div>
                </div>
@@ -306,6 +333,6 @@
       <!-- Scrollbar Js Files -->
       <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
       <script src="js/custom.js"></script>
-      <script  src="js/blog.js"></script>
+      <script sec="js/validation.js"></script>
    </body>
 </html>
