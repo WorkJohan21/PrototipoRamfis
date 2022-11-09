@@ -115,7 +115,9 @@
   .el__heading {
     color: #fff;
     text-transform: uppercase;
-    font-size: 18px;
+    font-size: 25px;
+    font-weight: bold;
+    font-style: italic;
   }
   .el__content {
     z-index: -1;
@@ -191,12 +193,12 @@
     overflow: hidden;
     position: absolute;
     left: 0;
-    bottom: -80px;
+    bottom: -60px;
     width: 100%;
     height: 100%;
     min-height: 250px;
     text-align: center;
-    font-size: 20vw;
+    font-size: 15vw;
     line-height: 0.85;
     font-weight: bold;
     transition: transform 0.5s, opacity 0.3s 1.4s;
@@ -238,7 +240,7 @@
     bottom: 0;
     width: 100%;
     height: 100%;
-    color: #fff;
+    color: #00ad00;
     transform: translate3d(0, -100%, 0);
     transition: transform 0.5s 0.1s;
   }
@@ -265,7 +267,7 @@
   }
   .el:nth-child(1) .el__bg:before {
     transition-delay: 0s;
-    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/onepgscr-3.jpg");
+    background-image: url("../images/RIU-playa.jpg");
   }
   .el:nth-child(2) {
     transform: translate3d(105.2083333333%, 0, 0);
@@ -284,7 +286,7 @@
   }
   .el:nth-child(2) .el__bg:before {
     transition-delay: 0.1s;
-    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/onepgscr-4.jpg");
+    background-image: url("../images/boquete.jpg");
   }
   .el:nth-child(3) {
     transform: translate3d(210.4166666667%, 0, 0);
@@ -303,7 +305,7 @@
   }
   .el:nth-child(3) .el__bg:before {
     transition-delay: 0.2s;
-    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/onepgscr-5.jpg");
+    background-image: url("../images/Paseo_General_Esteban_Huertas.jpg");
   }
   .el:nth-child(4) {
     transform: translate3d(315.625%, 0, 0);
@@ -322,7 +324,7 @@
   }
   .el:nth-child(4) .el__bg:before {
     transition-delay: 0.3s;
-    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/onepgscr-6.jpg");
+    background-image: url("../images/museomola.jpg");
   }
   .el:nth-child(5) {
     transform: translate3d(420.8333333333%, 0, 0);
@@ -341,7 +343,7 @@
   }
   .el:nth-child(5) .el__bg:before {
     transition-delay: 0.4s;
-    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/onepgscr-7.jpg");
+    background-image: url("../images/Mercado-Urbano.png");
   }
   .el:hover .el__bg:after {
     opacity: 0;

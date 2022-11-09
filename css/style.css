@@ -135,7 +135,7 @@ body {
 	top: 0;
 	left: calc(-295px - 40px);
 	border-right: 40px solid transparent;
-	border-bottom: 40px solid #F44336;
+	border-bottom: 40px solid #00ad00;
 	transition: 0.4s ease-in-out all;
   }
   
@@ -152,7 +152,7 @@ body {
 	padding: 8px;
 	height: 25px;
 	font-size: 15px;
-	background-color: #F44336;
+	background-color: #00ad00;
 	color: white;
 	margin-right: auto;
 	margin-left: auto;
