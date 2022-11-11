@@ -27,7 +27,7 @@ $(document).ready(function () {
             if ($(this).val().length === 0) {
                 $(this).siblings('span.error').text('Por favor introduce tu nombre completo').fadeIn().parent('.form-group').addClass('hasError');
                 usernameError = true;
-            } else if ($(this).val().length > 1 && $(this).val().length <= 6) {
+            } else if ($(this).val().length <= 3 && $(this).val().length <= 20) {
                 $(this).siblings('span.error').text('Por favor escriba al menos 6 caracteres').fadeIn().parent('.form-group').addClass('hasError');
                 usernameError = true;
             } else {
@@ -35,6 +35,21 @@ $(document).ready(function () {
                 usernameError = false;
             }
         }
+
+        // Cédula o Pasaporte
+        if ($(this).hasClass('ced-pasa')) {
+            if ($(this).val().length === 0) {
+                $(this).siblings('span.error').text('Por favor introduce tu cédula o pasaporte').fadeIn().parent('.form-group').addClass('hasError');
+                usernameError = true;
+            } else if ($(this).val().length <= 6 && $(this).val().length <= 20) {
+                $(this).siblings('span.error').text('Por favor escriba al menos 7 caracteres').fadeIn().parent('.form-group').addClass('hasError');
+                usernameError = true;
+            } else {
+                $(this).siblings('.error').text('').fadeOut().parent('.form-group').removeClass('hasError');
+                usernameError = false;
+            }
+        }
+
         // Email
         if ($(this).hasClass('email')) {
             if ($(this).val().length == '') {

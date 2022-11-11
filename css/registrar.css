@@ -251,21 +251,6 @@ body {
    color: #00ad00;
  }
  
- footer {
-   text-align: center;
- }
- footer p {
-   color: #777;
- }
- footer p a, footer p a:focus {
-   color: #b8b09f;
-   transition: all 0.3s;
-   text-decoration: none !important;
- }
- footer p a:hover, footer p a:focus:hover {
-   color: #00ad00;
- }
- 
  @media (max-width: 768px) {
    .container {
      overflow: hidden;
