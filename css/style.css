@@ -624,6 +624,22 @@ header {
     right: -57px;
 }
 
+.logo_section2 {
+    background: #fff;
+    min-height: 122px;
+    text-align: center;
+    line-height: 122px;
+}
+
+.logo_section2::after {
+    position: absolute;
+    width: 58px;
+    height: 122px;
+    background: url('../images/head_d.png');
+    content: "";
+    right: -57px;
+}
+
 nav.main-menu {
 	float: left;
 	margin-left: 0;
