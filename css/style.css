@@ -368,6 +368,10 @@ button {
 	background: #38c8a8;
 }
 
+.margin_top_20 {
+	margin-top: 20px !important;
+}
+
 .margin_top_30 {
 	margin-top: 30px !important;
 }

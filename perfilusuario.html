@@ -13,8 +13,7 @@
       <meta name="description" content="">
       <meta name="author" content="">
       <!-- bootstrap css -->
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
-      <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+      <link rel="stylesheet" href="css/bootstrap.min.css">
       <!-- style css -->
       <link rel="stylesheet" href="css/style.css">
       <link rel="stylesheet" href="css/perfilusuario.css">
@@ -30,7 +29,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
    </head>
    <!-- body -->
-   <body class="main-layout" >
+   <body class="main-layout">
       <!-- loader  -->
       <div class="loader_bg">
          <div class="loader"><img src="images/loading.gif" alt="" /></div>
@@ -44,7 +43,7 @@
                <div class="col-lg-3 logo_section">
                   <div class="full">
                      <div class="center-desk">
-                        <div class="logo"> <a href="index.html"><img src="images/logo_Trip&Deal.png"></a> </div>
+                        <div class="logo"> <a href="index.html"><img src="images/logo_Trip&Deal.png" alt="#"></a> </div>
                      </div>
                   </div>
                </div>
@@ -70,10 +69,10 @@
                               </li>
 
                               <!-- Nav Item - User Information -->
-                              <li class="nav-item dropdown no-arrow">
+                              <li class="active nav-item dropdown no-arrow">
                                  <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                     <span class="active mr-2 d-none d-lg-inline  text-lg">Juan Pérez</span>
+                                     <span class="mr-2 d-none d-lg-inline text-lg">Juan Pérez</span>
                                  </a>
                                  <!-- Dropdown - User Information -->
                                  <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
@@ -94,7 +93,10 @@
                                      </a>
                                  </div>
                               </li>    
-                               
+
+                              <li>
+                                 <a href="#"><img src="images/search_icon.png" alt="#" /></a>
+                              </li>
                            </ul>
                         </nav>
                      </div>
@@ -105,30 +107,61 @@
          <!-- end header inner -->
       </header>
       <!-- end header -->
-      
-      <div class="wrapper2">
-        <div class="profile-card2 js-profile-card">
+      <div class="Marketing-bg">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="Marketingheading">
+                     <h3></h3>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- section --> 
+      <!--<div class="section layout_padding dark_bg">
+         <div class="container">
+            
+            <div class="row">
+               <div class="col-md-6">
+                  <img src="images/marketing_img.png" alt="#" />
+               </div>
+               <div class="col-md-6">
+                  <div class="full blog_cont">
+                     <h3 class="white_font">Where can I get some</h3>
+                     <h5 class="grey_font">March 19 2019 5 READ</h5>
+                     <p class="white_font">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined g to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator..</p>
+                  </div>
+               </div>
+            </div>
+            
+            </div>
+         </div>
+      </div>-->
+      <!-- end section -->
+
+      <!-- section --> 
+      <div class="wrapper3">
+         <div class="profile-card3">
             <div class="profile-card__img">
                <img src="https://res.cloudinary.com/muhammederdem/image/upload/v1537638518/Ba%C5%9Fl%C4%B1ks%C4%B1z-1.jpg" alt="profile card">
             </div>
+           <div class="profile-card__cnt js-profile-cnt">
+            <div class="profile-card__txt">Juan Pérez</div>
 
-          <div class="profile-card__cnt js-profile-cnt">
-            <div class="profile-card__name">Juan Pérez</div>
-               <div class="profile-card__txt"><strong>Actividades</strong></div>
-               <div class="m-0 border-0 ">
-                <!-- Example Code -->
-
+                <div class="m-0 border-0 ">
+                 <!-- Example Code -->
+ 
                   <div class="container mt-3">          
                      <div class="profile-card-ctr">
-                        <button class="profile-card__button2 button--ALL js-message-btn    btn-ALL"        type="submit"> <img src="images/ALL.png"           width="50px" height="50px"> <br> TODO </button> 
+                        <button class="profile-card__button2 button--ALL    js-message-btn btn-ALL"        type="submit"> <img src="images/ALL.png"           width="50px" height="50px"> <br> TODO </button> 
                         <button class="profile-card__button2 button--yellow js-message-btn btn-turismo"    type="submit"> <img src="images/icono-turismo.png" width="50px" height="50px"> TURISMO </button>
                         <button class="profile-card__button2 button--orange js-message-btn btn-hospedaje"  type="submit"> <img src="images/hotel.png"         width="50ox" height="50px"> HOSPEDAJE </button>
                         <button class="profile-card__button2 button--eco    js-message-btn btn-ecoturismo" type="submit"> <img src="images/ecoturismo.png"    width="50px" height="50px"> ECOTURISMO </button>
                         <button class="profile-card__button2 button--blue   js-message-btn btn-eventos"    type="submit"> <img src="images/calendario.png"    width="50px" height="50px"> EVENTOS </button>
-                        <button class="profile-card__button2 button--green  js-message-btn btn-inversion"  type="submit"> <img src="images/inversion.png"     width="50px" height="50px"> INVERSIÓN </button>
                      </div>
                   </div>
-                        
+                         
                   <div class="container mt-3">          
                      <div class="profile-card-ctr">
                         <button class="profile-card__button2 button--orange js-message-btn   btn-playas" type="submit">PLAYAS</button>
@@ -136,659 +169,691 @@
                         <button class="profile-card__button2 button--orange js-message-btn   btn-museos" type="submit">MUSEOS</button>
                         <button class="profile-card__button2 button--blue js-message-btn     btn-compras" type="submit">COMPRAS</button>
                         <button class="profile-card__button2 button--orange js-message-btn   btn-religioso" type="submit">RELIGIOSO</button>
-                        <button class="profile-card__button2 button--favorite js-message-btn btn-favoritos" type="submit">FAVORITOS</button>
                      </div>
-       
-                     <div class="profile-card2 js-profile-card ALL">
+                  </div>
 
-                        <div class="TURISMO">
-                           <div class="container text-center">
-                              <div class="row row-cols-2 row-cols-lg-3 g-2 g-lg-3">
-                                <div class="col">
-                                  <div class="p-4">
-                                    <div class="card card-bodys" style="width: 18rem;">
-                                       <a href="#" class="card-link">
-                                          <div class="card-body">
-                                             <h5 class="card-title"><strong>Recorrido por parte del Canal de Panamá: dirección sur</strong></h5>
-                                             <img src="images/canal-de-panama.jpg">
-                                             <p></p>
-                                             <h6 class="card-subtitle mb-2 text-muted">TURISMO</h6>
-                                             <p>$150.00</p>           
-                                             <div class='corazon'>
-                                                <input type='checkbox' id='1'>
-                                                <label for='1'>❤ 120</label>
-                                             </div>                                         
-                                          </div>
-                                       </a>
+                  <div class="profile-card2 js-profile-card ALL">
+                        
+                     <div class="TURISMO">
+                        <div class="container text-center">
+                           <div class="row row-cols-2 row-cols-lg-3 g-2 g-lg-3">
+                              <div class="col-12"></div>
+                             <div class="col">
+                               <div class="p-4">
+                                 <div class="card card-bodys">
+                                    <img src="images/canal-de-panama.jpg" class="card-img-top img-adjusted">
+                                    <div class="card-body">
+                                       <h5 class="card-title"><strong>Recorrido por parte del Canal de Panamá: dirección sur</strong></h5>
+                                       <p class="card-text"></p>
+                                       <h6 class="card-subtitle mb-2 text-muted">TURISMO</h6>
+                                       <p>$150.00</p>
+                                       <div class='corazon'>
+                                          <input type='checkbox' id='1'>
+                                          <label for='1'>❤ 120</label>
+                                          <br>
+                                          <a id="reply" href="#" data-toggle="modal" data-target=".bd-example-modal-lg"><span>Información</span></a>
+                                       </div>     
                                     </div>
                                  </div>
-                                </div>
-                                <div class="col">
-                                 <div class="p-4">
-                                    <div class="card card-bodys" style="width: 18rem;">
-                                       <div class="card-body">
-                                          <h5 class="card-title">TURISMO</h5>
-                                          <h6 class="card-subtitle mb-2 text-muted">TURISMO</h6>
-                                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                          <a href="#" class="card-link">Card link</a>
-                                          <a href="#" class="card-link">Another link</a>
-                                          <div class='corazon'>
-                                             <input type='checkbox' id='2'>
-                                             <label for='2'>❤ 120</label>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                                </div>
-                                <div class="col">
-                                 <div class="p-4">
-                                    <div class="card card-bodys" style="width: 18rem;">
-                                       <div class="card-body">
-                                          <h5 class="card-title">TURISMO</h5>
-                                          <h6 class="card-subtitle mb-2 text-muted">TURISMO</h6>
-                                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                          <a href="#" class="card-link">Card link</a>
-                                          <a href="#" class="card-link">Another link</a>
-                                          <div class='corazon'>
-                                             <input type='checkbox' id='3'>
-                                             <label for='3'>❤ 120</label>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                                </div>                                                               
                               </div>
+                             </div>
+                             <div class="col">
+                              <div class="p-4">
+                                 <div class="card card-bodys">
+                                    <img src="images/canal-de-panama.jpg" class="card-img-top img-adjusted">
+                                    <div class="card-body">
+                                       <h5 class="card-title"><strong>Recorrido por parte del Canal de Panamá: dirección sur</strong></h5>
+                                       <p class="card-text"></p>
+                                       <h6 class="card-subtitle mb-2 text-muted">TURISMO</h6>
+                                       <p>$150.00</p>
+                                       <div class='corazon'>
+                                          <input type='checkbox' id='1'>
+                                          <label for='1'>❤ 120</label>
+                                          <br>
+                                          <a id="reply" href="#" data-toggle="modal" data-target=".bd-example-modal-lg"><span>Información</span></a>
+                                       </div>     
+                                    </div>
+                                 </div>
+                              </div>
+                             </div>
+                             <div class="col">
+                              <div class="p-4">
+                                 <div class="card card-bodys">
+                                    <img src="images/canal-de-panama.jpg" class="card-img-top img-adjusted">
+                                    <div class="card-body">
+                                       <h5 class="card-title"><strong>Recorrido por parte del Canal de Panamá: dirección sur</strong></h5>
+                                       <p class="card-text"></p>
+                                       <h6 class="card-subtitle mb-2 text-muted">TURISMO</h6>
+                                       <p>$150.00</p>
+                                       <div class='corazon'>
+                                          <input type='checkbox' id='1'>
+                                          <label for='1'>❤ 120</label>
+                                          <br>
+                                          <a id="reply" href="#" data-toggle="modal" data-target=".bd-example-modal-lg"><span>Información</span></a>
+                                       </div>     
+                                    </div>
+                                 </div>
+                              </div>
+                             </div>                                                               
                            </div>
                         </div>
+                     </div>
 
-                        <div class="HOSPEDAJE">
-                           <div class="container text-center">
-                              <div class="row row-cols-2 row-cols-lg-3 g-2 g-lg-3">
-                                <div class="col">
-                                  <div class="p-4">
-                                    <div class="card card-bodys" style="width: 18rem;">
+                     <div class="HOSPEDAJE">
+                        <div class="container text-center">
+                           <div class="row row-cols-2 row-cols-lg-3 g-2 g-lg-3">
+                             <div class="col">
+                               <div class="p-4">
+                                 <div class="card card-bodys">
+                                    <img src="images/RIU.jpg" class="card-img-top img-adjusted">
+                                    <div class="card-body">
+                                       <h5 class="card-title"><strong>Hotel RIU: 1 Deluxe camas dobles</strong></h5>
+                                       <p class="card-text"></p>
+                                       <h6 class="card-subtitle mb-2 text-muted">HOSPEDAJE</h6>                                          
+                                       <p>$813.00</p>                                         
+                                       <div class='corazon'>
+                                          <input type='checkbox' id='4'>
+                                          <label for='4'>❤ 120</label>
+                                          <br>
+                                          <a id="reply" href="#" data-toggle="modal" data-target=".bd-example-modal-lg"><span>Información</span></a>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                             </div>
+                             <div class="col">
+                              <div class="p-4">
+                                 <div class="card card-bodys">
+                                    <img src="images/RIU.jpg" class="card-img-top img-adjusted">
+                                    <div class="card-body">
+                                       <h5 class="card-title"><strong>Hotel RIU: 1 Deluxe camas dobles</strong></h5>
+                                       <p class="card-text"></p>
+                                       <h6 class="card-subtitle mb-2 text-muted">HOSPEDAJE</h6>                                          
+                                       <p>$813.00</p>                                         
+                                       <div class='corazon'>
+                                          <input type='checkbox' id='4'>
+                                          <label for='4'>❤ 120</label>
+                                          <br>
+                                          <a id="reply" href="#" data-toggle="modal" data-target=".bd-example-modal-lg"><span>Información</span></a>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                             </div>
+                             <div class="col">
+                                 <div class="p-4">
+                                    <div class="card card-bodys">
+                                       <img src="images/RIU.jpg" class="card-img-top img-adjusted">
                                        <div class="card-body">
                                           <h5 class="card-title"><strong>Hotel RIU: 1 Deluxe camas dobles</strong></h5>
-                                          <img src="images/RIU.jpg">
-                                          <p></p>
+                                          <p class="card-text"></p>
                                           <h6 class="card-subtitle mb-2 text-muted">HOSPEDAJE</h6>                                          
                                           <p>$813.00</p>                                         
                                           <div class='corazon'>
                                              <input type='checkbox' id='4'>
                                              <label for='4'>❤ 120</label>
+                                             <br>
+                                             <a id="reply" href="#" data-toggle="modal" data-target=".bd-example-modal-lg"><span>Información</span></a>
                                           </div>
                                        </div>
                                     </div>
                                  </div>
-                                </div>
-                                <div class="col">
-                                 <div class="p-4">
-                                    <div class="card card-bodys" style="width: 18rem;">
-                                       <div class="card-body">
-                                          <h5 class="card-title">HOSPEDAJE</h5>
-                                          <h6 class="card-subtitle mb-2 text-muted">HOSPEDAJE</h6>
-                                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                          <a href="#" class="card-link">Card link</a>
-                                          <a href="#" class="card-link">Another link</a>
-                                          <div class='corazon'>
-                                             <input type='checkbox' id='5'>
-                                             <label for='5'>❤ 120</label>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                                </div>
-                                <div class="col">
-                                 <div class="p-4">
-                                    <div class="card card-bodys" style="width: 18rem;">
-                                       <div class="card-body">
-                                          <h5 class="card-title">HOSPEDAJE</h5>
-                                          <h6 class="card-subtitle mb-2 text-muted">HOSPEDAJE</h6>
-                                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                          <a href="#" class="card-link">Card link</a>
-                                          <a href="#" class="card-link">Another link</a>
-                                          <div class='corazon'>
-                                             <input type='checkbox' id='6'>
-                                             <label for='6'>❤ 120</label>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                                </div>
-                              </div>
+                             </div>
                            </div>
                         </div>
+                     </div>
 
-                        <div class="ECOTURISMO">                           
-                           <div class="container text-center">
-                              <div class="row row-cols-2 row-cols-lg-3 g-2 g-lg-3">
-                                <div class="col">
-                                  <div class="p-4">
-                                    <div class="card  card-bodys" style="width: 18rem;">
-                                    <a href="#" class="card-link">
+                     <div class="ECOTURISMO">                           
+                        <div class="container text-center">
+                           <div class="row row-cols-2 row-cols-lg-3 g-2 g-lg-3">
+                             <div class="col">
+                                 <div class="p-4">
+                                    <div class="card card-bodys">
+                                       <img src="images/avistamiento-aves.jpg" class="card-img-top img-adjusted">
                                        <div class="card-body">
                                           <h5 class="card-title"><strong>Avistamiento de Aves - Parque Nacional Volcán Barú</strong></h5>
-                                          <img src="images/avistamiento-aves.jpg" width="250px" height="200px">
-                                          <h6 class="card-subtitle mb-2 text-muted">ECOTURISMO</h6>                                     
+                                          <p class="card-text"></p>
+                                          <h6 class="card-subtitle mb-2 text-muted">ECOTURISMO</h6>            
+                                          <p>$50.00</p>                               
                                           <div class='corazon'>
                                              <input type='checkbox' id='7'>
                                              <label for='7'>❤ 120</label>
+                                             <br>
+                                             <a id="reply" href="#" data-toggle="modal" data-target=".bd-example-modal-lg"><span>Información</span></a>
                                           </div>
-                                       </div>
-                                    </a>
+                                       </div>                                
                                     </div>                                   
                                  </div>
-                                </div>
-                                <div class="col">
+                             </div>
+                             <div class="col">
                                  <div class="p-4">
-                                    <div class="card card-bodys" style="width: 18rem;">
-                                    <a href="#" class="card-link">
+                                    <div class="card card-bodys">
+                                       <img src="images/avistamiento-aves.jpg" class="card-img-top img-adjusted">
                                        <div class="card-body">
-                                          <h5 class="card-title">ECOTURISMO</h5>
-                                          <h6 class="card-subtitle mb-2 text-muted">ECOTURISMO</h6>
-                                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                          <a href="#" class="card-link">Card link</a>
-                                          <a href="#" class="card-link">Another link</a>
+                                          <h5 class="card-title"><strong>Avistamiento de Aves - Parque Nacional Volcán Barú</strong></h5>
+                                          <p class="card-text"></p>
+                                          <h6 class="card-subtitle mb-2 text-muted">ECOTURISMO</h6>            
+                                          <p>$50.00</p>                               
                                           <div class='corazon'>
                                              <input type='checkbox' id='8'>
                                              <label for='8'>❤ 120</label>
+                                             <br>
+                                             <a id="reply" href="#" data-toggle="modal" data-target=".bd-example-modal-lg"><span>Información</span></a>
                                           </div>
-                                       </div>
-                                    </a>
-                                    </div>
+                                       </div>                                
+                                    </div>                                   
                                  </div>
-                                </div>
-                                <div class="col">
-                                 <div class="p-4">
-                                    <div class="card card-bodys" style="width: 18rem;">
-                                       <div class="card-body">
-                                          <h5 class="card-title">ECOTURISMO</h5>
-                                          <h6 class="card-subtitle mb-2 text-muted">ECOTURISMO</h6>
-                                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                          <a href="#" class="card-link">Card link</a>
-                                          <a href="#" class="card-link">Another link</a>
-                                          <div class='corazon'>
-                                             <input type='checkbox' id='9'>
-                                             <label for='9'>❤ 120</label>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                                </div>
                               </div>
-                           </div>
-                        </div>
-
-                        <div class="EVENTOS">                           
-                           <div class="container text-center">
-                              <div class="row row-cols-2 row-cols-lg-3 g-2 g-lg-3">
-                                <div class="col">
-                                  <div class="p-4">
-                                    <div class="card card-bodys" style="width: 18rem;">
-                                       <div class="card-body">
-                                          <h5 class="card-title">EVENTOS</h5>
-                                          <h6 class="card-subtitle mb-2 text-muted">EVENTOS</h6>
-                                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                          <a href="#" class="card-link">Card link</a>
-                                          <a href="#" class="card-link">Another link</a>
-                                          <div class='corazon'>
-                                             <input type='checkbox' id='10'>
-                                             <label for='10'>❤ 120</label>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                                </div>
-                                <div class="col">
+                              <div class="col">
                                  <div class="p-4">
-                                    <div class="card card-bodys" style="width: 18rem;">
+                                    <div class="card card-bodys">
+                                       <img src="images/avistamiento-aves.jpg" class="card-img-top img-adjusted">
                                        <div class="card-body">
-                                          <h5 class="card-title">EVENTOS</h5>
-                                          <h6 class="card-subtitle mb-2 text-muted">EVENTOS</h6>
-                                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                          <a href="#" class="card-link">Card link</a>
-                                          <a href="#" class="card-link">Another link</a>
+                                          <h5 class="card-title"><strong>Avistamiento de Aves - Parque Nacional Volcán Barú</strong></h5>
+                                          <p class="card-text"></p>
+                                          <h6 class="card-subtitle mb-2 text-muted">ECOTURISMO</h6>            
+                                          <p>$50.00</p>                               
                                           <div class='corazon'>
-                                             <input type='checkbox' id='11'>
-                                             <label for='11'>❤ 120</label>
+                                             <input type='checkbox' id='8'>
+                                             <label for='8'>❤ 120</label>
+                                             <br>
+                                             <a id="reply" href="#" data-toggle="modal" data-target=".bd-example-modal-lg"><span>Información</span></a>
                                           </div>
-                                       </div>
-                                    </div>
+                                       </div>                                
+                                    </div>                                   
                                  </div>
-                                </div>
-                                <div class="col">
-                                 <div class="p-4">
-                                    <div class="card card-bodys" style="width: 18rem;">
-                                       <div class="card-body">
-                                          <h5 class="card-title">EVENTOS</h5>
-                                          <h6 class="card-subtitle mb-2 text-muted">EVENTOS</h6>
-                                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                          <a href="#" class="card-link">Card link</a>
-                                          <a href="#" class="card-link">Another link</a>
-                                          <div class='corazon'>
-                                             <input type='checkbox' id='12'>
-                                             <label for='12'>❤ 120</label>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                                </div>
-                              </div>
-                           </div>
-                        </div>
-
-                        <div class="INVERSION">                           
-                           <div class="container text-center">
-                              <div class="row row-cols-2 row-cols-lg-3 g-2 g-lg-3">
-                                <div class="col">
-                                  <div class="p-4">
-                                    <div class="card card-bodys" style="width: 18rem;">
-                                       <div class="card-body">
-                                          <h5 class="card-title">INVERSIÓN</h5>
-                                          <h6 class="card-subtitle mb-2 text-muted">INVERSIÓN</h6>
-                                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                          <a href="#" class="card-link">Card link</a>
-                                          <a href="#" class="card-link">Another link</a>
-                                          <div class='corazon'>
-                                             <input type='checkbox' id='13'>
-                                             <label for='13'>❤ 120</label>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                                </div>
-                                <div class="col">
-                                 <div class="p-4">
-                                    <div class="card card-bodys" style="width: 18rem;">
-                                       <div class="card-body">
-                                          <h5 class="card-title">INVERSIÓN</h5>
-                                          <h6 class="card-subtitle mb-2 text-muted">INVERSIÓN</h6>
-                                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                          <a href="#" class="card-link">Card link</a>
-                                          <a href="#" class="card-link">Another link</a>
-                                          <div class='corazon'>
-                                             <input type='checkbox' id='14'>
-                                             <label for='14'>❤ 120</label>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                                </div>
-                                <div class="col">
-                                 <div class="p-4">
-                                    <div class="card card-bodys" style="width: 18rem;">
-                                       <div class="card-body">
-                                          <h5 class="card-title">INVERSIÓN</h5>
-                                          <h6 class="card-subtitle mb-2 text-muted">INVERSIÓN</h6>
-                                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                          <a href="#" class="card-link">Card link</a>
-                                          <a href="#" class="card-link">Another link</a>
-                                          <div class='corazon'>
-                                             <input type='checkbox' id='15'>
-                                             <label for='15'>❤ 120</label>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                                </div>
-                              </div>
-                           </div>
-                        </div>
-
-                        <div class="PLAYAS">                           
-                           <div class="container text-center">
-                              <div class="row row-cols-2 row-cols-lg-3 g-2 g-lg-3">
-                                <div class="col">
-                                  <div class="p-4">
-                                    <div class="card card-bodys" style="width: 18rem;">
-                                       <div class="card-body">
-                                          <h5 class="card-title">PLAYAS</h5>
-                                          <h6 class="card-subtitle mb-2 text-muted">PLAYAS</h6>
-                                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                          <a href="#" class="card-link">Card link</a>
-                                          <a href="#" class="card-link">Another link</a>
-                                          <div class='corazon'>
-                                             <input type='checkbox' id='16'>
-                                             <label for='16'>❤ 120</label>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                                </div>
-                                <div class="col">
-                                 <div class="p-4">
-                                    <div class="card card-bodys" style="width: 18rem;">
-                                       <div class="card-body">
-                                          <h5 class="card-title">PLAYAS</h5>
-                                          <h6 class="card-subtitle mb-2 text-muted">PLAYAS</h6>
-                                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                          <a href="#" class="card-link">Card link</a>
-                                          <a href="#" class="card-link">Another link</a>
-                                          <div class='corazon'>
-                                             <input type='checkbox' id='17'>
-                                             <label for='17'>❤ 120</label>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                                </div>
-                                <div class="col">
-                                 <div class="p-4">
-                                    <div class="card card-bodys" style="width: 18rem;">
-                                       <div class="card-body">
-                                          <h5 class="card-title">PLAYAS</h5>
-                                          <h6 class="card-subtitle mb-2 text-muted">PLAYAS</h6>
-                                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                          <a href="#" class="card-link">Card link</a>
-                                          <a href="#" class="card-link">Another link</a>
-                                          <div class='corazon'>
-                                             <input type='checkbox' id='18'>
-                                             <label for='18'>❤ 120</label>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                                </div>
-                              </div>
-                           </div>
-                        </div>
-
-                        <div class="CULTURAL">                           
-                           <div class="container text-center">
-                              <div class="row row-cols-2 row-cols-lg-3 g-2 g-lg-3">
-                                <div class="col">
-                                  <div class="p-4">
-                                    <div class="card card-bodys" style="width: 18rem;">
-                                       <div class="card-body">
-                                          <h5 class="card-title">CULTURAL</h5>
-                                          <h6 class="card-subtitle mb-2 text-muted">CULTURAL</h6>
-                                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                          <a href="#" class="card-link">Card link</a>
-                                          <a href="#" class="card-link">Another link</a>
-                                          <div class='corazon'>
-                                             <input type='checkbox' id='19'>
-                                             <label for='19'>❤ 120</label>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                                </div>
-                                <div class="col">
-                                 <div class="p-4">
-                                    <div class="card card-bodys" style="width: 18rem;">
-                                       <div class="card-body">
-                                          <h5 class="card-title">CULTURAL</h5>
-                                          <h6 class="card-subtitle mb-2 text-muted">CULTURAL</h6>
-                                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                          <a href="#" class="card-link">Card link</a>
-                                          <a href="#" class="card-link">Another link</a>
-                                          <div class='corazon'>
-                                             <input type='checkbox' id='20'>
-                                             <label for='20'>❤ 120</label>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                                </div>
-                                <div class="col">
-                                 <div class="p-4">
-                                    <div class="card card-bodys" style="width: 18rem;">
-                                       <div class="card-body">
-                                          <h5 class="card-title">CULTURAL</h5>
-                                          <h6 class="card-subtitle mb-2 text-muted">CULTURAL</h6>
-                                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                          <a href="#" class="card-link">Card link</a>
-                                          <a href="#" class="card-link">Another link</a>
-                                          <div class='corazon'>
-                                             <input type='checkbox' id='21'>
-                                             <label for='21'>❤ 120</label>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                                </div>
-                              </div>
-                           </div>
-                        </div>
-
-                        <div class="MUSEOS">                           
-                           <div class="container text-center">
-                              <div class="row row-cols-2 row-cols-lg-3 g-2 g-lg-3">
-                                <div class="col">
-                                  <div class="p-4">
-                                    <div class="card card-bodys" style="width: 18rem;">
-                                       <div class="card-body">
-                                          <h5 class="card-title">MUSEOS</h5>
-                                          <h6 class="card-subtitle mb-2 text-muted">MUSEOS</h6>
-                                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                          <a href="#" class="card-link">Card link</a>
-                                          <a href="#" class="card-link">Another link</a>
-                                          <div class='corazon'>
-                                             <input type='checkbox' id='22'>
-                                             <label for='22'>❤ 120</label>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                                </div>
-                                <div class="col">
-                                 <div class="p-4">
-                                    <div class="card card-bodys" style="width: 18rem;">
-                                       <div class="card-body">
-                                          <h5 class="card-title">MUSEOS</h5>
-                                          <h6 class="card-subtitle mb-2 text-muted">MUSEOS</h6>
-                                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                          <a href="#" class="card-link">Card link</a>
-                                          <a href="#" class="card-link">Another link</a>
-                                          <div class='corazon'>
-                                             <input type='checkbox' id='23'>
-                                             <label for='23'>❤ 120</label>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                                </div>
-                                <div class="col">
-                                 <div class="p-4">
-                                    <div class="card card-bodys" style="width: 18rem;">
-                                       <div class="card-body">
-                                          <h5 class="card-title">MUSEOS</h5>
-                                          <h6 class="card-subtitle mb-2 text-muted">MUSEOS</h6>
-                                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                          <a href="#" class="card-link">Card link</a>
-                                          <a href="#" class="card-link">Another link</a>
-                                          <div class='corazon'>
-                                             <input type='checkbox' id='24'>
-                                             <label for='24'>❤ 120</label>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                                </div>
-                              </div>
-                           </div>
-                        </div>
-
-                        <div class="COMPRAS">                           
-                           <div class="container text-center">
-                              <div class="row row-cols-2 row-cols-lg-3 g-2 g-lg-3">
-                                <div class="col">
-                                  <div class="p-4">
-                                    <div class="card card-bodys" style="width: 18rem;">
-                                       <div class="card-body">
-                                          <h5 class="card-title">COMPRAS</h5>
-                                          <h6 class="card-subtitle mb-2 text-muted">COMPRAS</h6>
-                                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                          <a href="#" class="card-link">Card link</a>
-                                          <a href="#" class="card-link">Another link</a>
-                                          <div class='corazon'>
-                                             <input type='checkbox' id='25'>
-                                             <label for='25'>❤ 120</label>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                                </div>
-                                <div class="col">
-                                 <div class="p-4">
-                                    <div class="card card-bodys" style="width: 18rem;">
-                                       <div class="card-body">
-                                          <h5 class="card-title">COMPRAS</h5>
-                                          <h6 class="card-subtitle mb-2 text-muted">COMPRAS</h6>
-                                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                          <a href="#" class="card-link">Card link</a>
-                                          <a href="#" class="card-link">Another link</a>
-                                          <div class='corazon'>
-                                             <input type='checkbox' id='26'>
-                                             <label for='26'>❤ 120</label>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                                </div>
-                                <div class="col">
-                                 <div class="p-4">
-                                    <div class="card card-bodys" style="width: 18rem;">
-                                       <div class="card-body">
-                                          <h5 class="card-title">COMPRAS</h5>
-                                          <h6 class="card-subtitle mb-2 text-muted">COMPRAS</h6>
-                                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                          <a href="#" class="card-link">Card link</a>
-                                          <a href="#" class="card-link">Another link</a>
-                                          <div class='corazon'>
-                                             <input type='checkbox' id='27'>
-                                             <label for='27'>❤ 120</label>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                                </div>
-                              </div>
-                           </div>
-                        </div>
-
-                        <div class="RELIGIOSO">                           
-                           <div class="container text-center">
-                              <div class="row row-cols-2 row-cols-lg-3 g-2 g-lg-3">
-                                <div class="col">
-                                  <div class="p-4">
-                                    <div class="card card-bodys" style="width: 18rem;">
-                                       <div class="card-body">
-                                          <h5 class="card-title">RELIGIOSO</h5>
-                                          <h6 class="card-subtitle mb-2 text-muted">RELIGIOSO</h6>
-                                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                          <a href="#" class="card-link">Card link</a>
-                                          <a href="#" class="card-link">Another link</a>
-                                          <div class='corazon'>
-                                             <input type='checkbox' id='28'>
-                                             <label for='28'>❤ 120</label>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                                </div>
-                                <div class="col">
-                                 <div class="p-4">
-                                    <div class="card card-bodys" style="width: 18rem;">
-                                       <div class="card-body">
-                                          <h5 class="card-title">RELIGIOSO</h5>
-                                          <h6 class="card-subtitle mb-2 text-muted">RELIGIOSO</h6>
-                                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                          <a href="#" class="card-link">Card link</a>
-                                          <a href="#" class="card-link">Another link</a>
-                                          <div class='corazon'>
-                                             <input type='checkbox' id='29'>
-                                             <label for='29'>❤ 120</label>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                                </div>
-                                <div class="col">
-                                 <div class="p-4">
-                                    <div class="card card-bodys" style="width: 18rem;">
-                                       <div class="card-body">
-                                          <h5 class="card-title">RELIGIOSO</h5>
-                                          <h6 class="card-subtitle mb-2 text-muted">RELIGIOSO</h6>
-                                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                          <a href="#" class="card-link">Card link</a>
-                                          <a href="#" class="card-link">Another link</a>
-                                          <div class='corazon'>
-                                             <input type='checkbox' id='30'>
-                                             <label for='30'>❤ 120</label>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                                </div>
-                              </div>
-                           </div>
-                        </div>
-
-                        <div class="FAVORITOS">                           
-                           <div class="container text-center">
-                              <div class="row row-cols-2 row-cols-lg-3 g-2 g-lg-3">
-                                <div class="col">
-                                  <div class="p-4">
-                                    <div class="card card-bodys" style="width: 18rem;">
-                                       <div class="card-body">
-                                          <h5 class="card-title">FAVORITOS</h5>
-                                          <h6 class="card-subtitle mb-2 text-muted">TURISMO</h6>
-                                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                          <a href="#" class="card-link">Card link</a>
-                                          <a href="#" class="card-link">Another link</a>
-                                          <div class='corazon-rojo'>
-                                             <input type='checkbox' id='31'>
-                                             <label class="label" for='31'>❤ 120</label>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                                </div>
-                                <div class="col">
-                                 <div class="p-4">
-                                    <div class="card card-bodys" style="width: 18rem;">
-                                       <div class="card-body">
-                                          <h5 class="card-title">FAVORITOS</h5>
-                                          <h6 class="card-subtitle mb-2 text-muted">HOSPEDAJE</h6>
-                                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                          <a href="#" class="card-link">Card link</a>
-                                          <a href="#" class="card-link">Another link</a>
-                                          <div class='corazon-rojo'>
-                                             <input type='checkbox' id='32'>
-                                             <label class="label" for='32'>❤ 120</label>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                                </div>
-                                <div class="col">
-                                 <div class="p-4">
-                                    <div class="card card-bodys" style="width: 18rem;">
-                                       <div class="card-body">
-                                          <h5 class="card-title">FAVORITOS</h5>
-                                          <h6 class="card-subtitle mb-2 text-muted">INVERSIÓN</h6>
-                                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                          <a href="#" class="card-link">Card link</a>
-                                          <a href="#" class="card-link">Another link</a>
-                                          <div class='corazon-rojo'>
-                                             <input type='checkbox' id='33'>
-                                             <label class="label" for='33'>❤ 120</label>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                                </div>
                               </div>
                            </div>
                         </div>
                      </div>
-                  </div>        
-            </div>
-          </div>
-        </div>
-      </div>
 
+                     <div class="EVENTOS">                           
+                        <div class="container text-center">
+                           <div class="row row-cols-2 row-cols-lg-3 g-2 g-lg-3">
+                              <div class="col">
+                                 <div class="p-4">
+                                    <div class="card card-bodys">
+                                       <img src="images/avistamiento-aves.jpg" class="card-img-top img-adjusted">
+                                       <div class="card-body">
+                                          <h5 class="card-title"><strong>Avistamiento de Aves - Parque Nacional Volcán Barú</strong></h5>
+                                          <p class="card-text"></p>
+                                          <h6 class="card-subtitle mb-2 text-muted">EVENTOS</h6>            
+                                          <p>$50.00</p>                               
+                                          <div class='corazon'>
+                                             <input type='checkbox' id='7'>
+                                             <label for='7'>❤ 120</label>
+                                             <br>
+                                             <a id="reply" href="#" data-toggle="modal" data-target=".bd-example-modal-lg"><span>Información</span></a>
+                                          </div>
+                                       </div>                                
+                                    </div>                                   
+                                 </div>
+                             </div>
+                             <div class="col">
+                                 <div class="p-4">
+                                    <div class="card card-bodys">
+                                       <img src="images/avistamiento-aves.jpg" class="card-img-top img-adjusted">
+                                       <div class="card-body">
+                                          <h5 class="card-title"><strong>Avistamiento de Aves - Parque Nacional Volcán Barú</strong></h5>
+                                          <p class="card-text"></p>
+                                          <h6 class="card-subtitle mb-2 text-muted">EVENTOS</h6>            
+                                          <p>$50.00</p>                               
+                                          <div class='corazon'>
+                                             <input type='checkbox' id='8'>
+                                             <label for='8'>❤ 120</label>
+                                             <br>
+                                             <a id="reply" href="#" data-toggle="modal" data-target=".bd-example-modal-lg"><span>Información</span></a>
+                                          </div>
+                                       </div>                                
+                                    </div>                                   
+                                 </div>
+                              </div>
+                              <div class="col">
+                                 <div class="p-4">
+                                    <div class="card card-bodys">
+                                       <img src="images/avistamiento-aves.jpg" class="card-img-top img-adjusted">
+                                       <div class="card-body">
+                                          <h5 class="card-title"><strong>Avistamiento de Aves - Parque Nacional Volcán Barú</strong></h5>
+                                          <p class="card-text"></p>
+                                          <h6 class="card-subtitle mb-2 text-muted">EVENTOS</h6>            
+                                          <p>$50.00</p>                               
+                                          <div class='corazon'>
+                                             <input type='checkbox' id='8'>
+                                             <label for='8'>❤ 120</label>
+                                             <br>
+                                             <a id="reply" href="#" data-toggle="modal" data-target=".bd-example-modal-lg"><span>Información</span></a>
+                                          </div>
+                                       </div>                                
+                                    </div>                                   
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+
+
+                     <div class="PLAYAS">                           
+                        <div class="container text-center">
+                           <div class="row row-cols-2 row-cols-lg-3 g-2 g-lg-3">
+                             <div class="col">
+                                 <div class="p-4">
+                                    <div class="card card-bodys">
+                                       <img src="images/canal-de-panama.jpg" class="card-img-top img-adjusted">
+                                       <div class="card-body">
+                                          <h5 class="card-title"><strong>PLAYAS</strong></h5>
+                                          <p class="card-text"></p>
+                                          <h6 class="card-subtitle mb-2 text-muted">PLAYAS</h6>
+                                          <p>$50.00</p>                               
+                                          <div class='corazon'>
+                                             <input type='checkbox' id='16'>
+                                             <label for='16'>❤ 120</label>
+                                             <br>
+                                             <a id="reply" href="#" data-toggle="modal" data-target=".bd-example-modal-lg"><span>Información</span></a>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col">
+                                 <div class="p-4">
+                                    <div class="card card-bodys">
+                                       <img src="images/canal-de-panama.jpg" class="card-img-top img-adjusted">
+                                       <div class="card-body">
+                                          <h5 class="card-title"><strong>PLAYAS</strong></h5>
+                                          <p class="card-text"></p>
+                                          <h6 class="card-subtitle mb-2 text-muted">PLAYAS</h6>
+                                          <p>$50.00</p>                               
+                                          <div class='corazon'>
+                                             <input type='checkbox' id='16'>
+                                             <label for='16'>❤ 120</label>
+                                             <br>
+                                             <a id="reply" href="#" data-toggle="modal" data-target=".bd-example-modal-lg"><span>Información</span></a>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col">
+                                 <div class="p-4">
+                                    <div class="card card-bodys">
+                                       <img src="images/canal-de-panama.jpg" class="card-img-top img-adjusted">
+                                       <div class="card-body">
+                                          <h5 class="card-title"><strong>PLAYAS</strong></h5>
+                                          <p class="card-text"></p>
+                                          <h6 class="card-subtitle mb-2 text-muted">PLAYAS</h6>
+                                          <p>$50.00</p>                               
+                                          <div class='corazon'>
+                                             <input type='checkbox' id='16'>
+                                             <label for='16'>❤ 120</label>
+                                             <br>
+                                             <a id="reply" href="#" data-toggle="modal" data-target=".bd-example-modal-lg"><span>Información</span></a>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+
+                     <div class="CULTURAL">                           
+                        <div class="container text-center">
+                           <div class="row row-cols-2 row-cols-lg-3 g-2 g-lg-3">
+                             <div class="col">
+                                 <div class="p-4">
+                                    <div class="card card-bodys">
+                                       <img src="images/canal-de-panama.jpg" class="card-img-top img-adjusted">
+                                       <div class="card-body">
+                                          <h5 class="card-title"><strong>CULTURAL</strong></h5>
+                                          <p class="card-text"></p>
+                                          <h6 class="card-subtitle mb-2 text-muted">CULTURAL</h6>
+                                          <p>$50.00</p>                               
+                                          <div class='corazon'>
+                                             <input type='checkbox' id='16'>
+                                             <label for='16'>❤ 120</label>
+                                             <br>
+                                             <a id="reply" href="#" data-toggle="modal" data-target=".bd-example-modal-lg"><span>Información</span></a>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col">
+                                 <div class="p-4">
+                                    <div class="card card-bodys">
+                                       <img src="images/canal-de-panama.jpg" class="card-img-top img-adjusted">
+                                       <div class="card-body">
+                                          <h5 class="card-title"><strong>CULTURAL</strong></h5>
+                                          <p class="card-text"></p>
+                                          <h6 class="card-subtitle mb-2 text-muted">CULTURAL</h6>
+                                          <p>$50.00</p>                               
+                                          <div class='corazon'>
+                                             <input type='checkbox' id='16'>
+                                             <label for='16'>❤ 120</label>
+                                             <br>
+                                             <a id="reply" href="#" data-toggle="modal" data-target=".bd-example-modal-lg"><span>Información</span></a>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col">
+                                 <div class="p-4">
+                                    <div class="card card-bodys">
+                                       <img src="images/canal-de-panama.jpg" class="card-img-top img-adjusted">
+                                       <div class="card-body">
+                                          <h5 class="card-title"><strong>CULTURAL</strong></h5>
+                                          <p class="card-text"></p>
+                                          <h6 class="card-subtitle mb-2 text-muted">CULTURAL</h6>
+                                          <p>$50.00</p>                               
+                                          <div class='corazon'>
+                                             <input type='checkbox' id='16'>
+                                             <label for='16'>❤ 120</label>
+                                             <br>
+                                             <a id="reply" href="#" data-toggle="modal" data-target=".bd-example-modal-lg"><span>Información</span></a>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+
+                     <div class="MUSEOS">                           
+                        <div class="container text-center">
+                           <div class="row row-cols-2 row-cols-lg-3 g-2 g-lg-3">
+                             <div class="col">
+                                 <div class="p-4">
+                                    <div class="card card-bodys">
+                                       <img src="images/canal-de-panama.jpg" class="card-img-top img-adjusted">
+                                       <div class="card-body">
+                                          <h5 class="card-title"><strong>MUSEOS</strong></h5>
+                                          <p class="card-text"></p>
+                                          <h6 class="card-subtitle mb-2 text-muted">MUSEOS</h6>
+                                          <p>$50.00</p>                               
+                                          <div class='corazon'>
+                                             <input type='checkbox' id='16'>
+                                             <label for='16'>❤ 120</label>
+                                             <br>
+                                             <a id="reply" href="#" data-toggle="modal" data-target=".bd-example-modal-lg"><span>Información</span></a>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col">
+                                 <div class="p-4">
+                                    <div class="card card-bodys">
+                                       <img src="images/canal-de-panama.jpg" class="card-img-top img-adjusted">
+                                       <div class="card-body">
+                                          <h5 class="card-title"><strong>MUSEOS</strong></h5>
+                                          <p class="card-text"></p>
+                                          <h6 class="card-subtitle mb-2 text-muted">MUSEOS</h6>
+                                          <p>$50.00</p>                               
+                                          <div class='corazon'>
+                                             <input type='checkbox' id='16'>
+                                             <label for='16'>❤ 120</label>
+                                             <br>
+                                             <a id="reply" href="#" data-toggle="modal" data-target=".bd-example-modal-lg"><span>Información</span></a>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col">
+                                 <div class="p-4">
+                                    <div class="card card-bodys">
+                                       <img src="images/canal-de-panama.jpg" class="card-img-top img-adjusted">
+                                       <div class="card-body">
+                                          <h5 class="card-title"><strong>MUSEOS</strong></h5>
+                                          <p class="card-text"></p>
+                                          <h6 class="card-subtitle mb-2 text-muted">MUSEOS</h6>
+                                          <p>$50.00</p>                               
+                                          <div class='corazon'>
+                                             <input type='checkbox' id='16'>
+                                             <label for='16'>❤ 120</label>
+                                             <br>
+                                             <a id="reply" href="#" data-toggle="modal" data-target=".bd-example-modal-lg"><span>Información</span></a>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+
+                     <div class="COMPRAS">                           
+                        <div class="container text-center">
+                           <div class="row row-cols-2 row-cols-lg-3 g-2 g-lg-3">
+                             <div class="col">
+                                 <div class="p-4">
+                                    <div class="card card-bodys">
+                                       <img src="images/canal-de-panama.jpg" class="card-img-top img-adjusted">
+                                       <div class="card-body">
+                                          <h5 class="card-title"><strong>COMPRAS</strong></h5>
+                                          <p class="card-text"></p>
+                                          <h6 class="card-subtitle mb-2 text-muted">COMPRAS</h6>
+                                          <p>$50.00</p>                               
+                                          <div class='corazon'>
+                                             <input type='checkbox' id='16'>
+                                             <label for='16'>❤ 120</label>
+                                             <br>
+                                             <a id="reply" href="#" data-toggle="modal" data-target=".bd-example-modal-lg"><span>Información</span></a>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col">
+                                 <div class="p-4">
+                                    <div class="card card-bodys">
+                                       <img src="images/canal-de-panama.jpg" class="card-img-top img-adjusted">
+                                       <div class="card-body">
+                                          <h5 class="card-title"><strong>COMPRAS</strong></h5>
+                                          <p class="card-text"></p>
+                                          <h6 class="card-subtitle mb-2 text-muted">COMPRAS</h6>
+                                          <p>$50.00</p>                               
+                                          <div class='corazon'>
+                                             <input type='checkbox' id='16'>
+                                             <label for='16'>❤ 120</label>
+                                             <br>
+                                             <a id="reply" href="#" data-toggle="modal" data-target=".bd-example-modal-lg"><span>Información</span></a>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col">
+                                 <div class="p-4">
+                                    <div class="card card-bodys">
+                                       <img src="images/canal-de-panama.jpg" class="card-img-top img-adjusted">
+                                       <div class="card-body">
+                                          <h5 class="card-title"><strong>COMPRAS</strong></h5>
+                                          <p class="card-text"></p>
+                                          <h6 class="card-subtitle mb-2 text-muted">COMPRAS</h6>
+                                          <p>$50.00</p>                               
+                                          <div class='corazon'>
+                                             <input type='checkbox' id='16'>
+                                             <label for='16'>❤ 120</label>
+                                             <br>
+                                             <a id="reply" href="#" data-toggle="modal" data-target=".bd-example-modal-lg"><span>Información</span></a>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+
+                     <div class="RELIGIOSO">                           
+                        <div class="container text-center">
+                           <div class="row row-cols-2 row-cols-lg-3 g-2 g-lg-3">
+                             <div class="col">
+                                 <div class="p-4">
+                                    <div class="card card-bodys">
+                                       <img src="images/canal-de-panama.jpg" class="card-img-top img-adjusted">
+                                       <div class="card-body">
+                                          <h5 class="card-title"><strong>RELIGIOSO</strong></h5>
+                                          <p class="card-text"></p>
+                                          <h6 class="card-subtitle mb-2 text-muted">RELIGIOSO</h6>
+                                          <p>$50.00</p>                               
+                                          <div class='corazon'>
+                                             <input type='checkbox' id='16'>
+                                             <label for='16'>❤ 120</label>
+                                             <br>
+                                             <a id="reply" href="#" data-toggle="modal" data-target=".bd-example-modal-lg"><span>Información</span></a>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col">
+                                 <div class="p-4">
+                                    <div class="card card-bodys">
+                                       <img src="images/canal-de-panama.jpg" class="card-img-top img-adjusted">
+                                       <div class="card-body">
+                                          <h5 class="card-title"><strong>RELIGIOSO</strong></h5>
+                                          <p class="card-text"></p>
+                                          <h6 class="card-subtitle mb-2 text-muted">RELIGIOSO</h6>
+                                          <p>$50.00</p>                               
+                                          <div class='corazon'>
+                                             <input type='checkbox' id='16'>
+                                             <label for='16'>❤ 120</label>
+                                             <br>
+                                             <a id="reply" href="#" data-toggle="modal" data-target=".bd-example-modal-lg"><span>Información</span></a>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col">
+                                 <div class="p-4">
+                                    <div class="card card-bodys">
+                                       <img src="images/canal-de-panama.jpg" class="card-img-top img-adjusted">
+                                       <div class="card-body">
+                                          <h5 class="card-title"><strong>RELIGIOSO</strong></h5>
+                                          <p class="card-text"></p>
+                                          <h6 class="card-subtitle mb-2 text-muted">RELIGIOSO</h6>
+                                          <p>$50.00</p>                               
+                                          <div class='corazon'>
+                                             <input type='checkbox' id='16'>
+                                             <label for='16'>❤ 120</label>
+                                             <br>
+                                             <a id="reply" href="#" data-toggle="modal" data-target=".bd-example-modal-lg"><span>Información</span></a>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+ 
+                  <div class="container text-center">
+                     <div class="row-cols-3 row-cols-lg-3 g-2 g-lg-3">
+                        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                           <div class="modal-dialog modal-lg">
+                              <div class="modal-content">
+                              <div class="card-link">
+                                 <div class="modal-header">
+                                    <h2>Comentarios</h2>
+                                 </div>
+                                 
+
+                                 <div class="modal-body">
+                                    <div class="row">
+                                       <div class="col-md-12">
+                                          <div class="full comment_blog_line">
+                                             <div class="row">
+                                                <div class="col-md-1">
+                                                   <img src="images/c_1.png" alt="#" />
+                                                </div>
+                                                <div class="col-md-9">
+                                                   <div class="full contact_text">
+                                                      <h3>Juan</h3>
+                                                      <h4>Publicado on Jan 10 / 2022 at 06:53 am</h4>
+                                                      <p>Me gusto mucho ver el proceso de un buque en el canal, 100% recomendado
+                                                      </p>
+                                                   </div>
+                                                </div>
+                                                <div class="col-md-2">
+                                                   <a id="reply" href="#"><span>Responder</span></a>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="full comment_blog_line">
+                                             <div class="row">
+                                                <div class="col-md-1">
+                                                   <img src="images/c_2.png" alt="#" />
+                                                </div>
+                                                <div class="col-md-9">
+                                                   <div class="full contact_text">
+                                                      <h3>Elsa</h3>
+                                                      <h4>Publicado on Jan 20 / 2021 at 08:53 pm</h4>
+                                                      <p>Muy interesante, el staff atiende super bien, y tuve la suerte de ver varios buques pasar.
+                                                      </p>
+                                                   </div>
+                                                </div>
+                                                <div class="col-md-2">
+                                                   <a id="reply" href="#"><span>Responder</span></a>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+
+                                 <div class="modal-footer">
+                                 </div>
+                                 
+                              </div>
+                              </div>
+                           </div>
+
+                           <div class="modal-dialog modal-lg" id="modalFacilidades">
+                              <div class="modal-content">
+                                 <div class="card-link">
+                                    <div class="modal-header">
+                                       <h2>Facilidades alrededor</h2>
+                                    </div>
+
+                                    <div class="modal-body">
+                                       <div class="row">
+                                          <div class="col-md-12">
+                                             <div class="full comment_blog_line">
+                                             <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=canal de panama&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://formatjson.org/">format json</a></div><style>.mapouter{position:relative;text-align:right;width:100%;height:400px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:400px;}.gmap_iframe {height:400px!important;}</style></div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+
+                                    <div class="modal-footer"> 
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        </a>
+                     </div>
+                  </div>
+                           </div>   
+                                 
+                                 
+                                      </div>  
+                                      </div>
+                           </div> 
+                      </div>
+                   </div>        
+             </div>
+           </div>
+         </div>
+       </div>
+      <!-- end section -->
+      
       <!-- footer -->
       <footer>
          <div class="container">
@@ -810,13 +875,14 @@
                <div class="col-lg-2 col-md-6">
                   <div class="footer_links">
                      <h3>Páginas</h3>
-                     <ul>
+                     <ul class="menu-area-main">
                         <li><a href="index.html"><i class="fa fa-angle-right" aria-hidden="true"></i> Inicio</a></li>
                         <li><a href="about.html"><i class="fa fa-angle-right" aria-hidden="true"></i> Sobre Nosotros</a></li>
-                        <li><a href="actividades.html"><i class="fa fa-angle-right" aria-hidden="true"></i> Actividades</a></li>
+                        <li class="active"><a href="actividades.html"><i class="fa fa-angle-right" aria-hidden="true"></i> Actividades</a></li>
                         <li><a href="eventos.html"><i class="fa fa-angle-right" aria-hidden="true"></i> Eventos</a></li>
                         <li><a href="inversion.html"><i class="fa fa-angle-right" aria-hidden="true"></i> Inversión</a></li>
                         <li><a href="registrar.html"><i class="fa fa-angle-right" aria-hidden="true"></i> Login</a></li>
+                     </ul>
                      </ul>
                   </div>
                </div>
@@ -876,12 +942,10 @@
       <script src="js/bootstrap.bundle.min.js"></script>
       <script src="js/jquery-3.0.0.min.js"></script>
       <script src="js/plugin.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
-      <!--Mostrar y ocultar categorias-->
-      <script src="js/categoriasperfil.js"></script>
       <!-- Scrollbar Js Files -->
       <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
       <script src="js/custom.js"></script>
-      <script src="js/validation.js"></script>
+      <!--JS categorias-->
+      <script src="js/categoriasperfil.js"></script>
    </body>
 </html>

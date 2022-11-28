@@ -134,21 +134,21 @@
             </div>
 
             <div class="col-6">
-                <div class="dark_bg">
-                    <div class="horizontal">
-                        <img class="img-profile rounded-circle" src="images/user-profile-svgrepo-com.svg" style="margin: 30px;">
-                        <h3 class="producto-title">Edgar de Gracia | Telefono: 6214-7245</h3>
-                    </div>
-                </div>
+               <div class="dark_bg">
+                  <div class="horizontal">
+                     <img class="img-profile rounded-circle" src="images/user-profile-svgrepo-com.svg" style="margin: 30px;">
+                     <h3 class="producto-title">Edgar de Gracia | Telefono: 6214-7245</h3>
+                  </div>
+               </div>
 
-                <div>
-                    <h2 class="producto-title">Casa en Parita</h2>
-                    <h5 class="producto-title">Dimension: 108mt2</h5>
-                    <h5 class="producto-title">Habitaciones: 3</h5>
-                    <h5 class="producto-title">Pago inmendiato</h5>
-                    <h2 class="titulitos"><b>$100.00</b></h2>
-                    <button class="profile-card__button2 button--green  js-message-btn btn-inversion" data-toggle="modal" data-target=".bd-example-modal" type="submit"> <img src="images/inversion.png"     width="50px" height="50px"> INVERTIR?! </button>
-                </div>
+               <div>
+                  <h2 class="producto-title">Casa en Parita</h2>
+                  <h5 class="producto-title">Dimension: 108mt2</h5>
+                  <h5 class="producto-title">Habitaciones: 3</h5>
+                  <h5 class="producto-title">Pago inmendiato</h5>
+                  <h2 class="titulitos"><b>$100.00</b></h2>
+                  <button class="profile-card__button2 button--green  js-message-btn btn-inversion" data-toggle="modal" data-target=".bd-example-modal" type="submit"> <img src="images/inversion.png"     width="50px" height="50px"> INVERTIR?! </button>
+               </div>
 
                <div class="modal bd-example-modal" tabindex="-1" role="dialog">
                   <div class="modal-dialog" role="document">
@@ -163,11 +163,17 @@
                         <p>¿Está seguro que desea invertir en está propiedad?</p>
                       </div>
                       <div class="modal-footer">
-                        <button type="button" class="btn btn-success">Confirmar inversión</button>
+                        <a href="inversion.html"><button type="button" class="btn btn-success" onclick="myFunction()">Confirmar inversión</button></a> 
                         <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
                       </div>
                     </div>
                   </div>
+                  
+                  <script>
+                     function myFunction() {
+                     alert("Inversión Exitosa");
+                     }
+                  </script>
                </div>
             </div>
         </div>
