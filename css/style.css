@@ -391,7 +391,7 @@ button {
     width: 70%;
     content: "";
     max-height: 485px;
-    background: #184091;
+    background: #047504;
     position: absolute;
     top: 28%;
     height: 100%;
@@ -2288,6 +2288,40 @@ ul.social_icon li a {
 	width: 200px;
 	height: 650px;
 	transition:transform .2s ease;
+	position: relative;
+}
+
+.subtitulo1 {
+	position: absolute;    /* posición absolute con respecto al padre */
+	bottom: 0;             /* posicionada en la esquina inferior derecha */
+	/*right: 1rem;*/
+	padding-left: 65%;
+	width: 1600px;
+	background: rgb(0, 173, 0, 0.5);
+	color: white;
+	font-weight: bold;
+}
+
+.subtitulo2 {
+	position: absolute;    /* posición absolute con respecto al padre */
+	bottom: 0;             /* posicionada en la esquina inferior derecha */
+	/*right: 1rem;*/
+	padding-left: 75%;
+	width: 1600px;
+	background: rgb(0, 173, 0, 0.5);
+	color: white;
+	font-weight: bold;
+}
+
+.subtitulo3 {
+	position: absolute;    /* posición absolute con respecto al padre */
+	bottom: 0;             /* posicionada en la esquina inferior derecha */
+	/*right: 1rem;*/
+	padding-left: 65%;
+	width: 1600px;
+	background: rgb(0, 173, 0, 0.5);
+	color: white;
+	font-weight: bold;
 }
 
 .tamaño-foto2{
