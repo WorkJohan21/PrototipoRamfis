@@ -61,6 +61,34 @@ $(document).ready(function () {
             }
         }
 
+        // Teléfono
+        if ($(this).hasClass('telefono')) {
+            if ($(this).val().length === 0) {
+                $(this).siblings('span.error').text('Por favor introduce tu teléfono').fadeIn().parent('.form-group').addClass('hasError');
+                usernameError = true;
+            } else if ($(this).val().length <= 8 && $(this).val().length <= 7) {
+                $(this).siblings('span.error').text('Por favor escribe los 7 caracteres de tu teléfono').fadeIn().parent('.form-group').addClass('hasError');
+                usernameError = true;
+            } else {
+                $(this).siblings('.error').text('').fadeOut().parent('.form-group').removeClass('hasError');
+                usernameError = false;
+            }
+        }
+
+        // Celular
+        if ($(this).hasClass('celular')) {
+            if ($(this).val().length === 0) {
+                $(this).siblings('span.error').text('Por favor introduce tu celular').fadeIn().parent('.form-group').addClass('hasError');
+                usernameError = true;
+            } else if ($(this).val().length <= 3 && $(this).val().length <= 20) {
+                $(this).siblings('span.error').text('Por favor escribe los 8 caracteres de tu celular').fadeIn().parent('.form-group').addClass('hasError');
+                usernameError = true;
+            } else {
+                $(this).siblings('.error').text('').fadeOut().parent('.form-group').removeClass('hasError');
+                usernameError = false;
+            }
+        }
+
         // PassWord
         if ($(this).hasClass('pass')) {
             if ($(this).val().length < 8) {
